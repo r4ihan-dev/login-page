@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <script src="https://kit.fontawesome.com/409fdf9367.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto" sans-serif;
+            background-color: #252428;
+            /* background-color: rgba(0, 0, 0, 0.9); */
+
+
+        }
+
+        .loginpage {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .form {
+            height: 320px;
+            width: 267px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #252432;
+            border-radius: 1px;
+            text-align: center;
+            box-shadow: inset 0 8px 25px rgba(0, 0, 0, 0.3);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            filter: drop-shadow(0 15px 50px #000);
+            animation: rotating 4s linear infinite;
+        }
+
+        div.outline {
+            outline: 20px solid #252432;
+        }
+
+        .form h3 {
+            color: white;
+            font-size: 15px;
+        }
+
+        .form h3 i {
+            color: #ff2770;
+            text-shadow: 0 0 5px, 0 0 30px #ff2770;
+        }
+
+        .form>input {
+            width: 215px;
+            background-color: #f9f9f9;
+            border: #ddd;
+            border-radius: 50px;
+            padding: 12px;
+            font-size: 14px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .form input:hover {
+            transform: translateY(-1px);
+            transition: 1s;
+            border: white;
+            box-shadow: 0 0 20px whitesmoke;
+        }
+
+        .form button {
+            width: 215px;
+            border-radius: 50px;
+            padding: 10px;
+            background-color: #45f3ff;
+            color: #111;
+            border: none;
+        }
+
+        .form button:hover {
+            box-shadow: 0 0 10px #45f3ff, 0 0 60px #45f3ff;
+            transition: 1s;
+            transform: translateY(-1px);
+        }
+
+        .form .signin {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 56px;
+
+        }
+
+        .form .gruop {}
+
+        .form .signin h5 {
+            color: #ff2770;
+        }
+
+        .form .signin h5:hover {
+            text-shadow: 1px 0 5px, 0 2px 20px #ff2770;
+        }
+
+        .form .signin h6 {
+            font-size: 12px;
+
+        }
+
+        .form .signin h6:hover {
+            text-shadow: 0 0 15px whitesmoke;
+            transition: 1s;
+
+        }
+
+        .form .signin a {
+            color: #3c9c41;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h3>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Sign Up
+                <i class="fa-solid fa-heart"></i>
+            </h3>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="password">
+            <input type="text" placeholder="email address">
+            <button>CREATE</button>
+            <div class="">
+                <h6>Already registered?</h6>
+                <h5>Sign IN</h5>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
